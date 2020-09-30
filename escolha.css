@@ -1,0 +1,15 @@
+h1{
+    font-size: 75px;
+    color: #0088a3;
+    text-align: center;
+    background-color: #81e8d5;
+    border-radius: 50px;
+    border: double 20px white;
+}
+
+body{
+    font-size: 40;
+    text-align: center;
+    color: white;
+    background-color: #0088a3;
+}
