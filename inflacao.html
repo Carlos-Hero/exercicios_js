@@ -1,0 +1,73 @@
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="inflacao.css">
+
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    function calculainflacao (preco1, preco2){
+        return preco1 - preco2
+        pulaLinha();
+    }
+
+    
+    var cal=calculainflacao(4.70, 3.30);
+    var cal2= calculainflacao(3.25, 2.99);
+    var cal3= calculainflacao(4.14, 3.99);
+
+    document.write("O valor da inflação do tomate é " + cal + "<br>");
+    document.write("O valor da inflação do arroz é " + cal2 + "<br>");
+    document.write("O valor da inflação da Cenoura é " + cal3 + "<br>");
+</script>
+<br>
+
+<script> 
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    function calculamais (preco1, preco2, preco3){
+        return preco1 + preco2 + preco3
+        pulaLinha();
+    }
+
+    var total= calculamais (1.40, 0.25, 0.14);
+
+    document.write("A inflação média no periodo foi de " + total + "<br>");
+
+</script>
+<br>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    function calculosdias (preco1, preco2){
+        return preco1 / preco2
+        pulaLinha();
+    }
+
+    var cal= calculosdias(1.40, 6);
+    var cal2= calculosdias(0.25, 6);
+    var cal3= calculosdias(0.14, 6);
+
+    document.write("O valor diário da inflação do tomate em seis dias é de " + cal + "<br>");
+    document.write("O valor diário da inflação do arroz em seis dias é de " + cal2 + "<br>");
+    document.write("O valor diário da inflação da cenoura em seis dias é de " + cal3 + "<br>");
+
+</script>
