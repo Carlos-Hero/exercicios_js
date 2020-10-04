@@ -3,23 +3,26 @@
         <meta charset="UTF-8">
         <title>Pizzaria Resilia</title>
     </head>
+    <body>
+     <script>
 
-    <script>
-
-        function pulaLinha() {
-        document.write("<br>");
+        function volta (volt) {
+        return Math.round (volt*100)/100;
         }
 
-        function mostra(frase) {
-        document.write(frase);
-        pulaLinha();
+        function receber (nomedapessoa, pizzanome, custo, valor){
+         var imposto = (8.9/100);
+
+         var calculoimposto = valor - imposto;
+
+         var imposto = valor - calculoimposto;
+
+         var lucroliquido = valor - imposto - custo;
+
+         document.write("Olá " + nomedapessoa + "! para a pizza " + pizzanome + " o lucro liquido é de R$" + volta(lucroliquido) + " o imposto é de " + volta(imposto) + "<br>");
         }
 
-        function receber (pizzanome, custo, valor , nomedapessoa){
-            mostra("");
-        }
-
-        var momedapessoa = prompt("Ola! Informe o seu nome.");
+        var nomedapessoa = prompt("Ola! Informe o seu nome.");
 
         var pizzanome = prompt("Qual é o nome da pizza?");
 
@@ -27,6 +30,7 @@
 
         var valor = prompt("Qual é o valor da pizza?");
 
-        receber(pizzanome, custo, valor);
-    </script> 
+        receber (nomedapessoa, pizzanome, custo, valor);
+     </script> 
+    </body>
 </html>
