@@ -1,0 +1,70 @@
+<html lang="pt-BR">
+    <header>
+        <meta charset="UTF-8">
+        <title>Evento/botão</title>
+        <link rel="stylesheet" href="monitoria.css">
+    </header>
+
+    <body background="akatsiki.jpg">
+
+    </body>
+
+    <script>
+        var corpo = document.querySelector("body");
+        var botao = document.createElement("button");
+        botao.textContent = "Pain";
+        corpo.appendChild(botao);
+        botao.id = 'img';
+        var tag = document.getElementById('img');
+
+
+        botao.style.borderColor = ("red");
+        botao.style.background = ("black");
+        botao.style.color = ('red');
+        botao.style.height = ('400px');
+        botao.style.width = ('600px');
+        botao.style.fontSize = ('150px');
+        botao.style.position = ('absolute');
+        botao.style.top = ('140px');
+        botao.style.left = ('380px');
+
+
+        botao.addEventListener("mouseover", function(){
+            botao.textContent = "Konan";
+            botao.style.borderColor = ("blue");
+            botao.style.color = ("blue");
+        })
+
+        botao.addEventListener("mouseout", function(){
+            botao.textContent = "Pain";
+            botao.style.borderColor = ("red");
+            botao.style.color = ("red");
+        })
+
+        botao.addEventListener("mouseup", function(){
+            botao.textContent = "Konan";
+            botao.style.borderColor = ("purple");
+            botao.style.color = ("blue");
+        })
+
+        botao.addEventListener("mousedown", function(){
+            botao.textContent = "Tobi";
+            botao.style.borderColor = ("orange");
+            botao.style.color = ("orange");
+        })
+
+        botao.addEventListener("click", function(){
+            botao.textContent = "Deidara";
+            botao.style.borderColor = ("yellow");
+            botao.style.color = ("yellow");
+        })
+
+        botao.addEventListener("dblclick", function(){
+            botao.textContent = "Hidan";
+            botao.style.borderColor = ("lilac");
+            botao.style.color = ("lilac");
+        })
+
+        console.log(tag);
+    </script>
+</html>
