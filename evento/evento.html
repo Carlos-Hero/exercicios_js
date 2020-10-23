@@ -2,7 +2,6 @@
     <header>
         <meta charset="UTF-8">
         <title>Evento/botão</title>
-        <link rel="stylesheet" href="monitoria.css">
     </header>
 
     <body background="akatsiki.jpg">
@@ -17,8 +16,8 @@
         botao.id = 'img';
         var tag = document.getElementById('img');
 
-
         botao.style.borderColor = ("red");
+        botao.style.borderWidth = ('10px')
         botao.style.background = ("black");
         botao.style.color = ('red');
         botao.style.height = ('400px');
@@ -43,28 +42,46 @@
 
         botao.addEventListener("mouseup", function(){
             botao.textContent = "Konan";
-            botao.style.borderColor = ("purple");
+            botao.style.borderColor = ("blue");
             botao.style.color = ("blue");
         })
 
         botao.addEventListener("mousedown", function(){
+            botao.style.border = ("10px solid orange")
             botao.textContent = "Tobi";
-            botao.style.borderColor = ("orange");
             botao.style.color = ("orange");
         })
 
         botao.addEventListener("click", function(){
             botao.textContent = "Deidara";
-            botao.style.borderColor = ("yellow");
             botao.style.color = ("yellow");
+            botao.style.borderColor = ("yellow"); 
         })
 
         botao.addEventListener("dblclick", function(){
             botao.textContent = "Hidan";
-            botao.style.borderColor = ("lilac");
-            botao.style.color = ("lilac");
+            botao.style.borderColor = ("purple");
+            botao.style.color = ("purple");
         })
 
-        console.log(tag);
+        botao.addEventListener("contextmenu", function(){
+            botao.textContent = "Itachi";
+            botao.style.borderColor = ("grey");
+            botao.style.color = ("grey");
+        })
+
+        botao.addEventListener("wheel", function(){
+            botao.textContent = "Kisame";
+            botao.style.borderColor = ("white");
+            botao.style.color = ("white");
+        })
+
+        botao.addEventListener("keypress", function(){
+            botao.textContent = "Sasori";
+            botao.style.borderColor = ("#ff6961");
+            botao.style.color = ("#ff6961");
+        })
+
+
     </script>
 </html>
