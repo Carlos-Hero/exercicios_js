@@ -70,4 +70,5 @@ a{
     color: black;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: darkgreen;
+    text-align: center;
 }
