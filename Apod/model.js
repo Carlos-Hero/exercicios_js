@@ -4,9 +4,7 @@ class Model {
         if (data !== undefined) {
             this.data = data
         }
-        this.titulo = " ";
         this.imagem = "";
-        this.texto = "";
     }
 
     busca() {
@@ -32,22 +30,13 @@ class Model {
 
     atualiza(v) {
         this.data = v.date;
-        this.titulo = v.title;
         this.imagem = v.hdurl;
-        this.texto = v.explanation;
     }
 
     getData() {
         return this.data;
     }
 
-    getTitulo() {
-        return this.titulo;
-    }
-
-    getTexto() {
-        return this.texto;
-    }
     getImagem() {
         return this.imagem;
     }
