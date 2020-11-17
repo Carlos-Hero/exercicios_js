@@ -1,7 +1,9 @@
+var $ = document.getElementById.bind(document);
+
 class Controller {
     constructor() {}
     acrescentar() {
-        let date = document.getElementById('data')
+        let date = $('data')
         let modelo = new Model(date.value);
         console.log(modelo.getData())
         let mostra = new View();
@@ -9,6 +11,6 @@ class Controller {
         console.log(mostra.recarrega(modelo))
     }
 }
-var botao = document.getElementById('botao');
+var botao = $('botao');
 let control = new Controller();
 botao.addEventListener('click', control.acrescentar)

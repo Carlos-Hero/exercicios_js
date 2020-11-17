@@ -1,7 +1,7 @@
 class View {
     constructor() {}
     recarrega(v) {
-        var imagem = document.getElementById('imagem')
+        var imagem = $('imagem')
         imagem.innerHTML = ` <img src="${v.getImagem()}" alt="" class="imagem">`
     }
 }
