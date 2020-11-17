@@ -1,0 +1,32 @@
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title id="titule">R-APOD</title>
+        <link rel="stylesheet" type="text/css" href="CSSReset.css">
+        <link rel="stylesheet" href="apod.css"> 
+        <link rel="shortcut icon" type="image / x-icon" href="arquivos/icon.ico">
+    </head>
+
+    <body class="corpo" background="arquivos/pastel.jpg">
+        <header class="chamada">
+            <nav class="divisoria">
+                <h1 class="nome">R-APOD</h1>
+                <img src="arquivos/logo.gif" class="imgC">
+            </nav>
+        </header>
+
+        <div class="caixinha">
+            <input id="data" type="date">
+            <h2 id="imagem"></h2>
+            <button id="botao">buscar</button>
+        </div>
+
+        <footer class="rodape">
+            <h1 class="nrodape">Carlos</h1>
+        </footer>
+
+        <script src="model.js"></script>
+        <script src="controller.js"></script>
+        <script src="view.js"></script>
+    </body>
+</html>

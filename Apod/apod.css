@@ -1,0 +1,84 @@
+.chamada{
+    background-color: #673ab7;
+}
+
+.divisoria{
+    display: flex;
+}
+
+.imgC{
+    margin:0 auto;
+    max-width: 420px;
+    height: 200px;
+    align-self: center;
+    align-items: center;
+}
+
+.nome{
+    margin-left: 40px;
+    font-size: 50px;
+    position: absolute;
+    top: 80px;
+    color: #dacde9;
+    font-family: 'galaxy';
+    align-self: flex-end;
+    align-items: flex-end;
+}
+
+
+@font-face{
+    font-family: 'galaxy';
+    src: url('arquivos/galaxy_1.ttf');
+}
+
+#data{
+    width: 250px; 
+    height: 25px;
+    font-size: 25px;
+    color: #673ab7;
+    position: relative;
+    top: -240px;
+    left: 0px;
+}
+
+#botao{
+    background-color: #fdfafb;
+    color: #673ab7;
+    position: relative;
+    top: -240px;
+    left: 0px;
+}
+
+.caixinha{
+    background-color:#fdfafb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 250px;
+    margin: 20px;
+    border-radius: 50px;
+    align-items: initial;
+}
+
+.rodape{
+    background-color: #643ab5;
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+}
+
+.nrodape{
+    text-align: center;
+    font-size: 50px;
+    font-family: "galaxy";
+    color: #dacde9;
+}
+
+.imagem{
+    border-radius: 25px;
+    position: absolute;
+    top: 300px;
+    left: 430px;
+    width: 500px;
+    height: 400px;
+}
